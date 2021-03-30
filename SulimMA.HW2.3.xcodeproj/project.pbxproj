@@ -13,6 +13,7 @@
 		9982913126134A0800EB00BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9982912F26134A0800EB00BB /* Main.storyboard */; };
 		9982913326134A0900EB00BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9982913226134A0900EB00BB /* Assets.xcassets */; };
 		9982913626134A0900EB00BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9982913426134A0900EB00BB /* LaunchScreen.storyboard */; };
+		9982913F26138FD100EB00BB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982913E26138FD100EB00BB /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9982913226134A0900EB00BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9982913526134A0900EB00BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9982913726134A0900EB00BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9982913E26138FD100EB00BB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9982913226134A0900EB00BB /* Assets.xcassets */,
 				9982913426134A0900EB00BB /* LaunchScreen.storyboard */,
 				9982913726134A0900EB00BB /* Info.plist */,
+				9982913E26138FD100EB00BB /* WelcomeViewController.swift */,
 			);
 			path = SulimMA.HW2.3;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9982912E26134A0800EB00BB /* ViewController.swift in Sources */,
+				9982913F26138FD100EB00BB /* WelcomeViewController.swift in Sources */,
 				9982912A26134A0800EB00BB /* AppDelegate.swift in Sources */,
 				9982912C26134A0800EB00BB /* SceneDelegate.swift in Sources */,
 			);
