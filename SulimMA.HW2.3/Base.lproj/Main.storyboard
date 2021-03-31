@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SulimMA_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="SulimMA_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ma-jx-PMl">
                                         <rect key="frame" x="0.0" y="54" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -36,7 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="aL1-Yh-Eb7" kind="show" id="miH-1J-NQQ"/>
+                                    <segue destination="aL1-Yh-Eb7" kind="show" id="gen-od-wgt"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I2s-cr-gfV">
@@ -74,7 +74,9 @@
                             <constraint firstItem="I2s-cr-gfV" firstAttribute="top" secondItem="4CN-sU-qrf" secondAttribute="bottom" constant="35" id="wEf-Yd-0yL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Atu-no-BCY"/>
                     <connections>
+                        <outlet property="logInButton" destination="8bC-Xf-vdC" id="L8j-BR-0KI"/>
                         <outlet property="passwordText" destination="3Ma-jx-PMl" id="zwv-8I-8ss"/>
                         <outlet property="userNameText" destination="eIo-2t-3ZZ" id="CuQ-bT-pcj"/>
                     </connections>
@@ -107,6 +109,9 @@
                                 <rect key="frame" x="165.5" y="709" width="83" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="isF-Zu-Pjs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DcO-ao-c1Y"/>
@@ -121,6 +126,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XOB-kh-WYl"/>
+                    <connections>
+                        <outlet property="welcomeText" destination="LPG-7T-NYd" id="tWL-mQ-rfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96T-0n-flz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

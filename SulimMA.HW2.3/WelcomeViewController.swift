@@ -9,10 +9,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var welcomeText: UITextField!
+    var welcome: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        welcomeText.text = "Welcome, \(welcome!)"
     }
     
 
